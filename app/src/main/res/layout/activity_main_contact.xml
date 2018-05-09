@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sukanya.emetest.MainContact">
+
+
+    <!--<WebView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:id="@+id/webView">-->
+    <!--</WebView>-->
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/numTxt"
+    android:visibility="invisible"
+
+    />
+
+    <TextView
+        android:id="@+id/contactText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Click on Below Button"
+        android:textAlignment="center" />
+    <Button
+        android:layout_marginTop="200dp"
+        android:id="@+id/idbtnCall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dd8278de"
+        android:onClick="btnCall"
+        android:text="Call"
+        android:layout_gravity="center"/>
+</LinearLayout>

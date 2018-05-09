@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sukanya.emetest.MainGrid"
+    tools:showIn="@layout/app_bar_main_grid"
+
+    android:id="@+id/setimagee"
+    android:paddingBottom="20dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/relativeLayout">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:id="@+id/rel_attraction"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="0.43"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/image22"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:adjustViewBounds="true"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/cp" />
+                        <TextView
+                            android:id="@+id/t2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Company Profile"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_below="@+id/image22"
+                            android:textSize="20dp"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rel_hotel"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="0.55"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:clickable="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/orcs"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="5dp"
+                            android:id="@+id/image23"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="See Courses"
+                            android:layout_below="@+id/image23"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorAccent"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1">
+
+                <RelativeLayout
+                    android:id="@+id/rel_shopping"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/relativeLayout"
+                    android:layout_weight="0.55"
+                    android:background="@color/white"
+                    android:clickable="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/image21"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:adjustViewBounds="true"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/yt" />
+
+                        <TextView
+                            android:id="@+id/t21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/image21"
+                            android:layout_centerHorizontal="true"
+                            android:text="Videos"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="20dp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rel_night"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.43"
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/cu"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="5dp"
+                            android:id="@+id/image222"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:id="@+id/t222"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contact"
+                            android:layout_below="@+id/image222"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorAccent"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1">
+                <RelativeLayout
+                    android:id="@+id/rel_food"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="0.49"
+                    android:layout_height="match_parent"
+                    android:clickable="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <ImageView
+                            android:id="@+id/image31"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:adjustViewBounds="true"
+                            android:padding="5dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/download1" />
+                        <TextView
+                            android:id="@+id/t31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Admision"
+                            android:layout_below="@+id/image31"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rel_transport"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:layout_weight="0.65"
+                    android:layout_marginLeft="8dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/se"
+                            android:adjustViewBounds="true"
+                            android:scaleType="centerInside"
+                            android:padding="5dp"
+                            android:id="@+id/image33"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:id="@+id/t33"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Send Enquiry"
+                            android:layout_below="@+id/image33"
+                            android:textSize="20dp"
+                            android:textColor="@color/colorAccent"
+                            android:layout_centerHorizontal="true"/>
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
